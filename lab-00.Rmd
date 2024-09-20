@@ -17,16 +17,12 @@ We set up the data frame. Edit the data below to include information about your 
 
 ```{r setup-tibble}
 team_data <- tibble(
-  name = c("Peter Rabbit", "member 1", "member 2", 
-           "member 3", "member 4"),
-  github_username = c("mcgregors-garden", "username 1", "username 2", 
-                      "username 3", "username 4"), 
-  colour = c("powderblue", "colour 1", "colour 2", 
-             "colour 3", "colour 4"),
-  hobby = c("Hopping", "hobby 1", "hobby 2", 
-            "hobby 3", "hobby 4"),
-  favourite_number = c(2, NA, NA, NA, NA)
-  )
+  name = c("fatimah", "echo", "annie", "justin", "peter"),
+  github_username = c("fatimahyusof", "GLDDPJ", "echo-xingyu","Anniexyc","Apollo0417" ), 
+  colour = c("springgreen4", "green", "blue", "yellow", "cyan"),
+  hobby = c("Hiking", "Hiking", "Muay Thai","snowboarding", "History"),
+  favourite_number = c(1, 10, 24, 5, 21)
+ )
 
 team_data
 ```
@@ -46,17 +42,19 @@ p1 <- ggplot(data = team_data,
 p1
 ```
 
+*anniexyc likes the number 5 and yellow colour*
+*apollo0417 favorite colour is cyan and loves the number *
+*fatimahyusof likes number*
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "username", 
+          y = "favorite number",
+          title = "idk")
 ```
 
 *Remove this text (including the stars), and add your answer for Exercise 19 here.*
